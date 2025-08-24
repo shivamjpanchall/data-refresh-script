@@ -2,7 +2,7 @@ name: Run Python Script Weekly
 
 on:
   schedule:
-    - cron: "46 4 * * 0"   # every Sunday at 04:30 UTC
+    - cron: "36 9 * * 0"   # every Sunday at 04:30 UTC
   workflow_dispatch:         # allows manual run from GitHub
 
 jobs:
