@@ -152,12 +152,13 @@ for page in range(1, 2):  # Update range for more pages
 
 # Save to CSV
 if data:
-    with open("yellowpages_hammer_unions.csv", "w", newline="", encoding="utf-8") as f:
+    with open("yellowpages_hammer_unions.xlsx", "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=data[0].keys())
         writer.writeheader()
         writer.writerows(data)
-    print("✅ Done! Data saved to yellowpages_hammer_unions.csv")
+    print("✅ Done! Data saved to yellowpages_hammer_unions.xlsx")
 else:
     print("⚠️ No data scraped. Please check scraping logic.")
+
 
 driver.quit()
